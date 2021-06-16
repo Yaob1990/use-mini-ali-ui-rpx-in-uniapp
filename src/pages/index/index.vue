@@ -1,49 +1,38 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
-	</view>
+  <view class="content">
+    <view class="section">
+      <view class="title">使用 am-badge</view>
+      <am-badge text="99" />
+    </view>
+    <view class="section">
+      <view class="title">使用 am-button</view>
+      <am-button type="primary">按钮</am-button>
+    </view>
+    <view class="section">
+      <view class="title">使用 am-search-bar</view>
+      <am-search-bar></am-search-bar>
+    </view>
+
+  </view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
-		}
-	}
+export default {
+  data() {
+    return {
+      title: "Hello"
+    };
+  },
+  onLoad() {},
+  methods: {}
+};
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+.section {
+  margin-top: 40rpx;
+}
+.title {
+  text-align: center;
+}
 </style>

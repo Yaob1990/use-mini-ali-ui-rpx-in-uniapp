@@ -1,16 +1,24 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "usingComponents": {
+      "am-badge": "/mycomponents/mini-ali-ui-rpx/es/badge/index",
+      "am-button": "/mycomponents/mini-ali-ui-rpx/es/button/index",
+      "am-loading": "/mycomponents/mini-ali-ui-rpx/es/loading/index",
+      "am-footer": "/mycomponents/mini-ali-ui-rpx/es/footer/index",
+      "am-icon": "/mycomponents/mini-ali-ui-rpx/es/am-icon/index",
+      "am-search-bar": "/mycomponents/mini-ali-ui-rpx/es/search-bar/index"
+    }
+  }
 }
